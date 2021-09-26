@@ -3,6 +3,17 @@ body{
     padding: 0px;
     margin: 0px;
 }
+h1{
+    margin-top: 145px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 60px;
+}
+p{
+    font-size: 24px;
+    margin: 30px 90px;
+}
+/* 第一層 */
 nav{
     position: fixed;
     top: 0px;
@@ -12,7 +23,7 @@ nav{
     width: 100%;
     height: 108px;
 }
-nav ul{
+nav > ul{
     float: right;
     height: 100%;
     padding: 10px 10px;
@@ -34,16 +45,7 @@ nav ul{
     height: 100%;
     font-size: 18px;
 }
-h1{
-    margin-top: 145px;
-    margin-bottom: 50px;
-    text-align: center;
-    font-size: 60px;
-}
-p{
-    font-size: 24px;
-    margin: 30px 90px;
-}
+/* 第二層 */
 .dropdown{
     position:absolute;
 }
@@ -56,6 +58,7 @@ ul.dropdown > li{
     top: 0px;
     padding-bottom: 5px;
 }
+/* 隱藏 */
 .hide{
     display: none;
 }

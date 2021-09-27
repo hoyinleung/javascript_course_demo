@@ -1,0 +1,10 @@
+*{
+    cursor: url('dog-food.cur'),auto;
+}
+h1{
+    text-align: center;
+}
+#dog{
+    font-size: 50px;
+    position: absolute;
+}

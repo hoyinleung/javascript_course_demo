@@ -13,18 +13,21 @@ let url = 'https://api.openweathermap.org/data/2.5/weather?q=Hong Kong&lang=zh_t
 fetch(url)
 .then(res=> res.json())
 .then(data=>{
+
+    //資料來到時才顯示
     waiting.classList.add('hide')
     result.classList.remove('hide')
     
+    //更新天氣資料
     weatherDescription.innerText = data.weather[0].description
     humidity.innerText = data.main.humidity
     maxTemp.innerText = data.main.temp_max
     minTemp.innerText = data.main.temp_min
     feelTemp.innerText = data.main.feels_like
 
-    //weather image
+    //天氣圖片
     weatherImg.setAttribute('src','http://openweathermap.org/img/wn/'+data.weather[0].icon+'@2x.png')
-    console.log(data)
+
 })
 .catch(e=>{
     console.log(e)

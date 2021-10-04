@@ -1,1 +1,2 @@
-# Jvascript分頁(tab-content)小實作示範
+# Javascript分頁小實作示範
+- 新聞類網站常用tab-content

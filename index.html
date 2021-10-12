@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>待辦事項 Todo List UI示範</title>
+</head>
+<body>
+    <div id="todoApp">
+
+        <h1>我的待辦事項</h1>
+
+        <input id="searchItemText" name="searchItemText" type="text" placeholder="搜尋...">
+
+        <div class="todoWrapper">
+
+            <ul class="todoItem">
+                <li>
+                    <span class="itemContent">吃飯</span>
+                    <span class="delete">X</span>
+                </li>
+                <li>
+                    <span class="itemContent">吃飯後溫習Javascript進階</span>
+                    <span class="delete">X</span>
+                </li>
+            </ul>
+
+        </div>
+        
+        <form id="addItemForm">
+            <input id="addItemText" name="addItemText" type="text" placeholder="事項內容">
+            <button type="submit">加入新事項</button>
+        </form>
+    </div>
+    <script src="./todo.js"></script>
+</body>
+</html>

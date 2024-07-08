@@ -22,7 +22,12 @@ let switchTab = (e) => {
         c.classList.remove('active');
     })
 
+    //想知道用戶正在mouseover那個tab，拿到該data-tab的值
     let selectedTab = e.target.getAttribute("data-tab");
-    let activeTab = document.querySelector(selectedTab);
-    activeTab.classList.add('active');
+
+    //知道了用戶正mouseover那個tab後，再拿到selectedTab是對應那個Content框的
+    let activeContentTab = document.querySelector(selectedTab);
+
+    //將該對應的Content框設成active (顯示出來)
+    activeContentTab.classList.add('active');
 }

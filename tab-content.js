@@ -11,11 +11,15 @@ allTabs.forEach(t=>{
 
 let switchTab = (e) => {
 
-    //點了的tab顏色轉換
+    //將所有tab的active class移除
     allTabs.forEach(t=>{
         t.classList.remove('active');
     })
+
+    //加返active class去用戶mouseover的那個tab
     e.target.classList.add('active');
+
+    //--------------------------------
 
     //拿出tab的相應內容
     content.forEach(c=>{

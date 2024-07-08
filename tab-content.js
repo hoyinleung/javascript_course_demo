@@ -16,12 +16,12 @@ let switchTab = (e) => {
         t.classList.remove('active');
     })
 
-    //加返active class去用戶mouseover的那個tab
+    //加返active class去用戶mouseover的那個tab (轉做active tab的顏色)
     e.target.classList.add('active');
 
     //--------------------------------
 
-    //拿出tab的相應內容
+    //將所有content框的active class移除
     content.forEach(c=>{
         c.classList.remove('active');
     })
